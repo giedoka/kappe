@@ -1,0 +1,103 @@
+header {
+  position: fixed;
+  width: 300px;
+  background: #31383c;
+  box-shadow: 5px 0px 100px 30px rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
+  max-height: 100%;
+  left: 0;
+  border: 1px solid #242b2e; }
+
+header .logo {
+  background: #ffffff;
+  height: 125px; }
+  header .logo h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4.76rem;
+    margin: 0;
+    padding-top: 32px;
+    position: relative;
+    margin-left: 29.3%; }
+  header .logo img {
+    position: relative;
+    top: -10px;
+    left: 41%; }
+header ul {
+  padding: 0;
+  margin: 0; }
+  header ul li {
+    list-style-type: none; }
+header .menu li {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  border-bottom: 1px solid #293034; }
+  header .menu li:hover {
+    background: #27b2b0; }
+  header .menu li.active {
+    background: #27b2b0; }
+  header .menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 25px; }
+header .under-menu {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  background: #242b2e;
+  padding-right: 25px;
+  text-align: right;
+  padding-bottom: 272px; }
+  header .under-menu h2 {
+    margin: 0;
+    color: #27b2b0;
+    font-size: 19px;
+    padding: 23px 0; }
+  header .under-menu .filter-nav {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #1e282b; }
+    header .under-menu .filter-nav li {
+      font-size: 13px;
+      color: #63686a;
+      padding-bottom: 14px;
+      cursor: pointer; }
+      header .under-menu .filter-nav li:hover {
+        color: #ffffff; }
+      header .under-menu .filter-nav li.active {
+        color: #ffffff; }
+  header .under-menu .social-list {
+    padding: 28px 0 23px 0;
+    display: flex;
+    justify-content: flex-end; }
+    header .under-menu .social-list li {
+      padding-left: 10px; }
+  header .under-menu p {
+    color: #6b7072; }
+
+header .menu li,
+header .filter-nav li,
+header .under-menu h2 {
+  text-align: right; }
+
+.menu-btn {
+  position: fixed;
+  left: 301px;
+  top: 50%;
+  background: #242b2e;
+  padding: 5px;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 5px 0px 100px 10px rgba(0, 0, 0, 0.7);
+  border: 1px solid #1e282b;
+  border-left: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  text-align: center; }
+
+/*# sourceMappingURL=menu.css.map */
