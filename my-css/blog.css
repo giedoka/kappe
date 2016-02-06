@@ -163,7 +163,9 @@ article {
         article .posts .column-3 .link-post .container,
         article .posts .column-4 .link-post .container,
         article .posts .column-5 .link-post .container {
-          /*margin: 40px 20px 40px 20px;*/ }
+          /*margin: 40px 20px 40px 20px;*/
+          margin-left: 20px;
+          margin-right: 20px; }
           article .posts .column-1 .link-post .container p,
           article .posts .column-2 .link-post .container p,
           article .posts .column-3 .link-post .container p,
