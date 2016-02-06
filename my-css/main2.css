@@ -5,8 +5,9 @@ body {
   overflow-x: hidden; }
 
 header {
+  height: 100%;
   position: fixed;
-  z-index: 99999;
+  z-index: 999;
   width: 300px;
   background: #31383c;
   box-shadow: 5px 0px 100px 30px rgba(0, 0, 0, 0.7);
@@ -19,9 +20,9 @@ header {
     header {
       box-shadow: none;
       left: -301px; } }
-
-header {
-  height: 100%; }
+  @media (max-width: 600px) {
+    header {
+      width: 200px; } }
   header .logo {
     background: #ffffff;
     height: 125px; }
@@ -97,6 +98,7 @@ header .under-menu h2 {
 
 .menu-btn {
   position: fixed;
+  z-index: 999;
   left: 0;
   top: 50%;
   background: #242b2e;
@@ -119,7 +121,7 @@ header .under-menu h2 {
 
 aside .info {
   position: relative;
-  z-index: 999; }
+  z-index: 9999; }
   aside .info .info-btn {
     background-color: #27b2b0;
     opacity: 0.7;

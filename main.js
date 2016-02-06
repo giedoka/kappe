@@ -17,6 +17,15 @@ $(document).ready(function(){
     	});
     });
     }
+    
+    $('.logo').click(function() {
+        $('header').animate({
+    		left: '-301px'
+    	});
+    	$('.menu-btn').animate({
+    		left: '0'
+    	});
+    });
 
     $('.info-btn').click(function(){
         if($(this).css('opacity') == 0.7) {
