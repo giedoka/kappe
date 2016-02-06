@@ -154,13 +154,16 @@ article {
         height: 137px;
         background: #27b2b0;
         color: #ffffff;
-        text-align: center; }
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         article .posts .column-1 .link-post .container,
         article .posts .column-2 .link-post .container,
         article .posts .column-3 .link-post .container,
         article .posts .column-4 .link-post .container,
         article .posts .column-5 .link-post .container {
-          margin: 40px 20px 40px 20px; }
+          /*margin: 40px 20px 40px 20px;*/ }
           article .posts .column-1 .link-post .container p,
           article .posts .column-2 .link-post .container p,
           article .posts .column-3 .link-post .container p,
@@ -169,7 +172,7 @@ article {
             font-size: 1.8rem;
             font-weight: 300;
             margin: 0;
-            margin-bottom: 10px; }
+            /*margin-bottom: 10px;*/ }
           article .posts .column-1 .link-post .container a,
           article .posts .column-2 .link-post .container a,
           article .posts .column-3 .link-post .container a,

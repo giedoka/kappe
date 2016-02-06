@@ -120,13 +120,16 @@ article {
                 background: $turqoiseColor;
                 color: #ffffff;
                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .container {
-                    margin: 40px 20px 40px 20px;
+                    /*margin: 40px 20px 40px 20px;*/
                     p {
                         font-size: 1.8rem;
                         font-weight: 300;
                         margin: 0;
-                        margin-bottom: 10px;
+                        /*margin-bottom: 10px;*/
                     }
                     a {
                         text-decoration: none;
