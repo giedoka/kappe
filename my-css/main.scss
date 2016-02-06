@@ -10,6 +10,7 @@ body {
 
 header {
 	position: fixed;
+    z-index: 99999;
 	width: 300px;
 	background: #31383c;
 	box-shadow: 5px 0px 100px 30px rgba(0, 0, 0, 0.7);
