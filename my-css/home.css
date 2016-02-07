@@ -9,7 +9,8 @@ article {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     article .photo-box:first-child, article .photo-box:nth-child(3), article .photo-box:nth-child(6), article .photo-box:nth-child(8), article .photo-box:nth-child(9), article .photo-box:nth-child(11), article .photo-box:nth-child(14), article .photo-box:nth-child(16) {
       background: #d6d6d6;
       color: #acacac; }
@@ -20,11 +21,12 @@ article {
       padding-right: 5px; }
     article .photo-box .height-span {
       padding-left: 5px; }
-    article .photo-box:after {
+    article .photo-box .find-out {
       content: '';
       display: none;
+      left: 0;
       position: absolute;
-      background: #27b2b0;
+      background: rgba(39, 178, 176, 0.8);
       width: 100%;
       height: 100%; }
 

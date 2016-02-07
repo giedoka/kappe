@@ -1,4 +1,5 @@
 $turqoiseColor: #27b2b0;
+$turqoiseRGBa: rgba(39, 178, 176, 0.8);
 
 article {
 	display: flex;
@@ -13,6 +14,7 @@ article {
 	   display: flex;
 	   justify-content: center;
 	   align-items: center;
+       position: relative;
        
        
        &:first-child,
@@ -47,11 +49,12 @@ article {
            padding-left: 5px;
        }
        
-       &:after {
+       .find-out {
            content: '';
            display: none;
+           left: 0;
            position: absolute;
-           background: $turqoiseColor;
+           background: $turqoiseRGBa;
            width: 100%;
            height: 100%;
        }

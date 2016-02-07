@@ -58,13 +58,11 @@ $(document).ready(function(){
     	$('.height-span-blog').html($('.post .header').height());
     });
     
-    for(var i = 0; i < 16; i++) {
-	    $(".photo-box").children().eq(i).hover(function(){
-	    	$(this).find(".find-out").css("display", "flex");
-	        }, function(){
-	        $(this).find(".find-out").css("display", "none");
-            });
-    }
+	$('.photo-box').hover(function(){
+        $(this).find('.find-out').css("display", "flex");
+	    }, function(){
+        $(this).find('.find-out').css("display", "none");
+    });
     $('.post').hover(function() {
         $(this).find('.header i').css("display", "flex");
         }, function(){
