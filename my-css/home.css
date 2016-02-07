@@ -3,7 +3,7 @@ article {
   flex-wrap: wrap;
   margin-left: 300px; }
   article .photo-box {
-    flex: 1 0 405px;
+    flex: 1 0 400px;
     height: 311px;
     font-size: 3rem;
     font-weight: bold;
@@ -11,6 +11,9 @@ article {
     justify-content: center;
     align-items: center;
     position: relative; }
+    @media (max-width: 400px) {
+      article .photo-box {
+        flex: 1 0 200px; } }
     article .photo-box:first-child, article .photo-box:nth-child(3), article .photo-box:nth-child(6), article .photo-box:nth-child(8), article .photo-box:nth-child(9), article .photo-box:nth-child(11), article .photo-box:nth-child(14), article .photo-box:nth-child(16) {
       background: #d6d6d6;
       color: #acacac; }
