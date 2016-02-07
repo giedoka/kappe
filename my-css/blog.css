@@ -70,7 +70,8 @@ article {
           padding: 14px;
           color: #ffffff;
           background: #27b2b0;
-          opacity: 0.7; }
+          opacity: 0.7;
+          cursor: pointer; }
           article .posts .column-1 .post .header i:hover,
           article .posts .column-2 .post .header i:hover,
           article .posts .column-3 .post .header i:hover,
@@ -108,7 +109,75 @@ article {
       article .posts .column-4 .post .information,
       article .posts .column-5 .post .information {
         background: #ffffff;
-        padding: 20px; }
+        padding: 20px;
+        border-bottom: 2px solid #e3e3e3; }
+        article .posts .column-1 .post .information h1,
+        article .posts .column-2 .post .information h1,
+        article .posts .column-3 .post .information h1,
+        article .posts .column-4 .post .information h1,
+        article .posts .column-5 .post .information h1 {
+          font-size: 1.8rem;
+          display: inline; }
+          article .posts .column-1 .post .information h1:hover,
+          article .posts .column-2 .post .information h1:hover,
+          article .posts .column-3 .post .information h1:hover,
+          article .posts .column-4 .post .information h1:hover,
+          article .posts .column-5 .post .information h1:hover {
+            text-decoration: underline; }
+          article .posts .column-1 .post .information h1 a,
+          article .posts .column-2 .post .information h1 a,
+          article .posts .column-3 .post .information h1 a,
+          article .posts .column-4 .post .information h1 a,
+          article .posts .column-5 .post .information h1 a {
+            color: #000000;
+            text-decoration: none; }
+        article .posts .column-1 .post .information p,
+        article .posts .column-2 .post .information p,
+        article .posts .column-3 .post .information p,
+        article .posts .column-4 .post .information p,
+        article .posts .column-5 .post .information p {
+          font-size: 1.3rem;
+          color: #818181; }
+      article .posts .column-1 .post .footer,
+      article .posts .column-2 .post .footer,
+      article .posts .column-3 .post .footer,
+      article .posts .column-4 .post .footer,
+      article .posts .column-5 .post .footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 100;
+        color: #818181;
+        background: #ffffff;
+        padding: 15px; }
+        article .posts .column-1 .post .footer p,
+        article .posts .column-2 .post .footer p,
+        article .posts .column-3 .post .footer p,
+        article .posts .column-4 .post .footer p,
+        article .posts .column-5 .post .footer p {
+          display: flex;
+          align-items: center;
+          margin-right: 16px; }
+          article .posts .column-1 .post .footer p i,
+          article .posts .column-2 .post .footer p i,
+          article .posts .column-3 .post .footer p i,
+          article .posts .column-4 .post .footer p i,
+          article .posts .column-5 .post .footer p i {
+            margin-right: 5px; }
+          article .posts .column-1 .post .footer p a,
+          article .posts .column-2 .post .footer p a,
+          article .posts .column-3 .post .footer p a,
+          article .posts .column-4 .post .footer p a,
+          article .posts .column-5 .post .footer p a {
+            color: #818181;
+            text-decoration: none; }
+        article .posts .column-1 .post .footer .comments:hover,
+        article .posts .column-2 .post .footer .comments:hover,
+        article .posts .column-3 .post .footer .comments:hover,
+        article .posts .column-4 .post .footer .comments:hover,
+        article .posts .column-5 .post .footer .comments:hover {
+          text-decoration: underline; }
       article .posts .column-1 .post,
       article .posts .column-1 .image-post,
       article .posts .column-1 .link-post,

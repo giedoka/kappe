@@ -68,13 +68,9 @@ $(document).ready(function(){
 	        $(this).find(".find-out").css("display", "none");
             });
     }
-    $('.photo-box:first-child').hover(function() {
-        $('.photo-box:after').css("display", "flex");
+    $('.post').hover(function() {
+        $(this).find('.header i').css("display", "flex");
         }, function(){
-	    $('.photo-box:after').css("display", "none");
-    });
-    
-    $('.galery').hover(function() {
-        $(this).find('i').hide();
+	    $(this).find('.header i').css("display", "none");
     });
 });
