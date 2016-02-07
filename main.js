@@ -49,15 +49,12 @@ $(document).ready(function(){
 
     $('.width-span').html($('.photo-box').width());
     $('.height-span').html($('.photo-box').height());
-    $(window).on('resize', function(){
-    	$('.width-span').html($('.photo-box').width());
-    	$('.height-span').html($('.photo-box').height());
-    });
-    
     $('.width-span').html($('.post .header').width());
     $('.height-span').html($('.post .header').height());
     $(window).on('resize', function(){
-    	$('.width-span').html($('.post .header').width());
+    	$('.width-span').html($('.photo-box').width());
+    	$('.height-span').html($('.photo-box').height());
+        $('.width-span').html($('.post .header').width());
     	$('.height-span').html($('.post .header').height());
     });
     
