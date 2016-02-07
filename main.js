@@ -49,13 +49,13 @@ $(document).ready(function(){
 
     $('.width-span').html($('.photo-box').width());
     $('.height-span').html($('.photo-box').height());
-    $('.width-span').html($('.post .header').width());
-    $('.height-span').html($('.post .header').height());
+    $('.width-span-blog').html($('.post .header').width());
+    $('.height-span-blog').html($('.post .header').height());
     $(window).on('resize', function(){
     	$('.width-span').html($('.photo-box').width());
     	$('.height-span').html($('.photo-box').height());
-        $('.width-span').html($('.post .header').width());
-    	$('.height-span').html($('.post .header').height());
+        $('.width-span-blog').html($('.post .header').width());
+    	$('.height-span-blog').html($('.post .header').height());
     });
     
     for(var i = 0; i < 16; i++) {
