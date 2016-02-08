@@ -68,4 +68,9 @@ $(document).ready(function(){
         }, function(){
 	    $(this).find('.header i').css("display", "none");
     });
+    $('.single-img').hover(function(){
+        $(this).find('.find-out').css("display", "flex");
+	    }, function(){
+        $(this).find('.find-out').css("display", "none");
+    });
 });

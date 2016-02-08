@@ -1,0 +1,189 @@
+$backgroundGrey: #b4b7b8;
+$turqoiseColor: #27b2b0;
+$paragraphColor: #b1b1b1;
+$turqoiseRGBa: rgba(39, 178, 176, 0.9);
+
+html {
+    font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+body {
+    background: $backgroundGrey;
+}
+
+article {
+    margin-left: 300px;
+    @media(max-width:1000px) {
+        margin-left: 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px;
+        background: #ffffff;
+        font-weight: 100;
+        
+        h2, p {
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 2.4rem;
+            @media(max-width: 400px) {
+                font-size: 2rem;
+            }
+        }
+        
+        p {
+            font-size: 1.8rem;
+            color: $paragraphColor;
+            @media(max-width: 400px) {
+                font-size: 1.6rem;
+            }
+        }
+        
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 40%;
+            padding: 30px;
+            border-right: 1px solid $paragraphColor;
+            
+            img {
+                flex: 1 0 100%;
+                height: 302px;
+                margin-bottom: 26px;
+                @media(max-width: 600px) {
+                    height: 200px;
+                }
+                @media(max-width: 400px) {
+                    height: 120px;
+                }
+            }
+            
+            .who-we-are {
+                border-bottom: 1px solid $paragraphColor;
+                padding-bottom: 30px;
+                
+                h2 {
+                    margin-bottom: 20px;
+                }
+                
+                p:nth-child(2) {
+                    margin-bottom: 41px;
+                }
+            }
+            
+            .our-staff {
+                margin-top: 28px;
+                
+                h2 {
+                    margin-bottom: 23px;
+                }
+                
+                .staff-imgs {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    
+                    .single-img {
+                        height: 180px;
+                        flex: 1 0 150px;
+                        background: url("/Users/bartoszgronkiewicz/Desktop/kappe/img/staff.png") no-repeat;
+                        background-position: center;
+                        position: relative;
+                        
+                        .find-out {
+                            cursor: pointer;
+                            display: none;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            background: $turqoiseRGBa;
+                            width: 100%;
+                            height: 100%;
+                            font-weight: 100;
+                            color: #ffffff;
+                            
+                            h2 {
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                            }
+                            
+                            p {
+                                font-size: 1.3rem;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .right-column {
+            flex: 1 0 40%;
+            margin: 30px;
+            
+            .skills-list {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                
+                li {
+                    list-style-type: none;
+                    
+                    .title {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        margin-bottom: 10px;
+                        
+                        p {
+                            color: #000000;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    
+                    .progress-bar {
+                        flex: 1 0 100%;
+                        height: 34px;
+                        border: 1px solid $paragraphColor;
+                        position: relative;
+                        margin-bottom: 19px;
+                        
+                        .percentage {
+                            background: $paragraphColor;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                    &:first-child {
+                        .percentage {
+                            width: 89%;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .percentage {
+                            width: 97%;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .percentage {
+                            width: 85%;
+                        }
+                    }
+                    &:nth-child(4) {
+                        .percentage {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
