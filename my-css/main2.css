@@ -137,23 +137,37 @@ aside .info {
     justify-content: center;
     align-items: center;
     cursor: pointer; }
+    @media (max-width: 500px) {
+      aside .info .info-btn {
+        width: 50px;
+        height: 50px; } }
     aside .info .info-btn i {
       padding: 12px 10px;
       border-radius: 100%;
-      font-size: 4rem; }
+      font-size: 3.5rem; }
+      @media (max-width: 500px) {
+        aside .info .info-btn i {
+          font-size: 3rem;
+          padding: 6px 4px; } }
       aside .info .info-btn i.active {
         border: 1px solid #ffffff;
         font-size: 2.4rem; }
+        @media (max-width: 500px) {
+          aside .info .info-btn i.active {
+            font-size: 2rem; } }
   aside .info .contact-info {
     position: fixed;
     right: -280px;
-    top: 91px;
+    top: 92px;
     width: 280px;
     background: rgba(0, 0, 0, 0.7);
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1.6rem; }
+    @media (max-width: 500px) {
+      aside .info .contact-info {
+        top: 52px; } }
     aside .info .contact-info ul {
       list-style-type: none;
       padding: 17px; }
