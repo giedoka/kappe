@@ -63,7 +63,7 @@ article {
           article .container .left-column .our-staff .staff-imgs .single-img {
             height: 180px;
             flex: 1 0 150px;
-            background: url("/Users/bartoszgronkiewicz/Desktop/kappe/img/staff.png") no-repeat;
+            background: url("../img/staff.png") no-repeat;
             background-position: center;
             position: relative; }
             article .container .left-column .our-staff .staff-imgs .single-img .find-out {
