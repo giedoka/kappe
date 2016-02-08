@@ -131,7 +131,7 @@ article {
           article .container .right-column .testimionials .person .photo {
             width: 80px;
             height: 80px;
-            background: url("/Users/bartoszgronkiewicz/Desktop/kappe/img/staff.png") no-repeat;
+            background: url("../img/staff.png") no-repeat;
             background-position: center; }
           article .container .right-column .testimionials .person .name {
             width: 100%;
