@@ -180,5 +180,8 @@ aside .info {
         aside .info .contact-info ul li i {
           font-size: 2rem;
           padding-right: 13px; }
+        aside .info .contact-info ul li a {
+          color: #ffffff;
+          text-decoration: none; }
 
 /*# sourceMappingURL=main2.css.map */
