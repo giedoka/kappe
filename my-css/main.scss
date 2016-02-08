@@ -181,6 +181,10 @@ aside {
 	       justify-content: center;
 	       align-items: center;
 	       cursor: pointer;
+           @media(max-width: 500px) {
+               width: 70px;
+               height: 70px;
+           }
            i {
               padding: 12px 10px;
 	          border-radius: 100%;
