@@ -121,5 +121,41 @@ article {
             width: 85%; }
           article .container .right-column .skills-list li:nth-child(4) .percentage {
             width: 75%; }
+      article .container .right-column .testimionials {
+        display: flex;
+        flex-direction: column; }
+        article .container .right-column .testimionials h2 {
+          margin-bottom: 23px; }
+        article .container .right-column .testimionials .person {
+          display: flex; }
+          article .container .right-column .testimionials .person .photo {
+            width: 80px;
+            height: 80px;
+            background: url("/Users/bartoszgronkiewicz/Desktop/kappe/img/staff.png") no-repeat;
+            background-position: center; }
+          article .container .right-column .testimionials .person .name {
+            width: 100%;
+            height: 80px;
+            background: #27b2b0;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            padding-left: 23px; }
+        article .container .right-column .testimionials p {
+          margin: 0;
+          padding: 27px;
+          border: 1px solid #b1b1b1;
+          border-top: none; }
+      article .container .right-column .services h2 {
+        margin-bottom: 20px;
+        margin-top: 27px; }
+      article .container .right-column .services ul {
+        padding: 0; }
+        article .container .right-column .services ul li {
+          color: #b1b1b1;
+          font-size: 1.4rem;
+          margin-bottom: 16px; }
 
 /*# sourceMappingURL=about.css.map */
