@@ -1,0 +1,120 @@
+$backgroundGrey: #b4b7b8;
+$turqoiseColor: #27b2b0;
+$paragraphColor: #b1b1b1;
+$turqoiseRGBa: rgba(39, 178, 176, 0.9);
+$commentSpanColor: #d1d1d1;
+$commentParagraphColor: #a3a3a3;
+
+html {
+    font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+body {
+    background: $backgroundGrey;
+}
+
+article {
+    margin-left: 300px;
+    @media(max-width:1000px) {
+        margin-left: 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px;
+        background: #ffffff;
+        font-weight: 100;
+        
+        h2, p {
+            margin: 0;
+            font-weight: 100;
+        }
+        
+        h2 {
+            font-size: 2.4rem;
+            @media(max-width: 400px) {
+                font-size: 2rem;
+            }
+        }
+        
+        p {
+            font-size: 1.8rem;
+            color: $commentParagraphColor;
+            @media(max-width: 400px) {
+                font-size: 1.6rem;
+            }
+        }
+        
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 40%;
+            padding: 30px;
+            border-right: 1px solid $paragraphColor;
+            
+            .post {
+                padding-bottom: 30px;
+                border-bottom: 1px solid $commentSpanColor;
+                flex: 1 0 100%;
+                .header-img {
+                    background: url("../img/header-about.jpg") no-repeat;
+                    background-position: 70%;
+                    height: 560px;
+                    margin-bottom: 26px;
+                    @media(max-width: 600px) {
+                        height: 400px;
+                    }
+                    @media(max-width: 400px) {
+                        height: 200px;
+                    }
+                }
+            }
+            .comments {
+                margin-top: 30px;
+                .comments-list {
+                    li {
+                        display: block;
+                        
+                        .comment {
+                            display: flex;
+                            margin-bottom: 30px;
+                            
+                            .photo {
+                                width: 80px;
+                                height: 80px;
+                                background: url("../img/staff.png") no-repeat;
+                                background-position: center;
+                            }
+                            .data {
+                                margin-left: 21px;
+                                .name-and-date {
+                                    font-size: 1.4rem;
+                                    font-weight: 100;
+                                    padding-bottom: 9px;
+                                    border-bottom: 1px solid $commentSpanColor;
+                                    margin: 0;
+                                    display: inline-block;
+                                    span {
+                                        color: $commentSpanColor;
+                                    }
+                                }
+                                p {
+                                    margin-top: 11px;
+                                    color: $commentParagraphColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        .right-column {
+            flex: 1 0 40%;
+            margin: 30px;
+        }
+    }
+}

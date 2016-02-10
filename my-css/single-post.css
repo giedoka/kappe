@@ -1,0 +1,84 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+body {
+  background: #b4b7b8; }
+
+article {
+  margin-left: 300px; }
+  @media (max-width: 1000px) {
+    article {
+      margin-left: 0; } }
+  article .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    background: #ffffff;
+    font-weight: 100; }
+    article .container h2, article .container p {
+      margin: 0;
+      font-weight: 100; }
+    article .container h2 {
+      font-size: 2.4rem; }
+      @media (max-width: 400px) {
+        article .container h2 {
+          font-size: 2rem; } }
+    article .container p {
+      font-size: 1.8rem;
+      color: #a3a3a3; }
+      @media (max-width: 400px) {
+        article .container p {
+          font-size: 1.6rem; } }
+    article .container .left-column {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 40%;
+      padding: 30px;
+      border-right: 1px solid #b1b1b1; }
+      article .container .left-column .post {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #d1d1d1;
+        flex: 1 0 100%; }
+        article .container .left-column .post .header-img {
+          background: url("../img/header-about.jpg") no-repeat;
+          background-position: 70%;
+          height: 560px;
+          margin-bottom: 26px; }
+          @media (max-width: 600px) {
+            article .container .left-column .post .header-img {
+              height: 400px; } }
+          @media (max-width: 400px) {
+            article .container .left-column .post .header-img {
+              height: 200px; } }
+      article .container .left-column .comments {
+        margin-top: 30px; }
+        article .container .left-column .comments .comments-list li {
+          display: block; }
+          article .container .left-column .comments .comments-list li .comment {
+            display: flex;
+            margin-bottom: 30px; }
+            article .container .left-column .comments .comments-list li .comment .photo {
+              width: 80px;
+              height: 80px;
+              background: url("../img/staff.png") no-repeat;
+              background-position: center; }
+            article .container .left-column .comments .comments-list li .comment .data {
+              margin-left: 21px; }
+              article .container .left-column .comments .comments-list li .comment .data .name-and-date {
+                font-size: 1.4rem;
+                font-weight: 100;
+                padding-bottom: 9px;
+                border-bottom: 1px solid #d1d1d1;
+                margin: 0;
+                display: inline-block; }
+                article .container .left-column .comments .comments-list li .comment .data .name-and-date span {
+                  color: #d1d1d1; }
+              article .container .left-column .comments .comments-list li .comment .data p {
+                margin-top: 11px;
+                color: #a3a3a3; }
+    article .container .right-column {
+      flex: 1 0 40%;
+      margin: 30px; }
+
+/*# sourceMappingURL=single-post.css.map */
