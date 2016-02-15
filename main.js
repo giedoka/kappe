@@ -7,24 +7,16 @@ $(document).ready(function(){
     		left: '0'
     	});
     });
-	if($(window).width < 1000) {
+	
     $('article').click(function() {
-    	$('header').animate({
-    		left: '-301px'
-    	});
-    	$('.menu-btn').animate({
-    		left: '0'
-    	});
-    });
-    }
-    
-    $('.logo').click(function() {
-        $('header').animate({
-    		left: '-301px'
-    	});
-    	$('.menu-btn').animate({
-    		left: '0'
-    	});
+        if($(window).width() < 1000) {
+            $('header').animate({
+                left: '-301px'
+            });
+            $('.menu-btn').animate({
+                left: '0'
+            });
+        }
     });
 
     $('.info-btn').click(function(){
@@ -72,5 +64,33 @@ $(document).ready(function(){
         $(this).find('.find-out').css("display", "flex");
 	    }, function(){
         $(this).find('.find-out').css("display", "none");
+    });
+    $('.another-imgs li:first-child').click(function(){
+        $('.post .header-img img').css("display", "none");
+        $('.post .header-img img').attr("src", "img/header-about.jpg");
+        $('.post .header-img img').fadeIn(500);
+        $('.another-imgs li').not(this).removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.another-imgs li:nth-child(2)').click(function(){
+        $('.post .header-img img').css("display", "none");
+        $('.post .header-img img').attr("src", "img/forest-2.png");
+        $('.post .header-img img').fadeIn(500);
+        $('.another-imgs li').not(this).removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.another-imgs li:nth-child(3)').click(function(){
+        $('.post .header-img img').css("display", "none");
+        $('.post .header-img img').attr("src", "img/rails.png");
+        $('.post .header-img img').fadeIn(500);
+        $('.another-imgs li').not(this).removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.another-imgs li:nth-child(4)').click(function(){
+        $('.post .header-img img').css("display", "none");
+        $('.post .header-img img').attr("src", "img/brick-wall.png");
+        $('.post .header-img img').fadeIn(500);
+        $('.another-imgs li').not(this).removeClass('active');
+        $(this).addClass('active');
     });
 });

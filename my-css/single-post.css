@@ -59,10 +59,13 @@ article {
             article .container .left-column .post .header-img ul li {
               list-style-type: none;
               display: inline-block;
-              width: 15px;
-              height: 7px;
-              background: #ffffff;
-              border: 1px solid #000000; }
+              width: 18px;
+              height: 10px;
+              background: #b4b7b8;
+              border: 1px solid #000000;
+              cursor: pointer; }
+              article .container .left-column .post .header-img ul li.active {
+                background: #27b2b0; }
       article .container .left-column .comments .comments-list li {
         display: block; }
         article .container .left-column .comments .comments-list li .comment {

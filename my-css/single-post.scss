@@ -79,10 +79,14 @@ article {
                         li {
                             list-style-type: none;
                             display: inline-block;
-                            width: 15px;
-                            height: 7px;
-                            background: #ffffff;
+                            width: 18px;
+                            height: 10px;
+                            background: $backgroundGrey;
                             border: 1px solid #000000;
+                            cursor: pointer;
+                            &.active {
+                                background: $turqoiseColor;
+                            }
                         }
                     }
                 }
