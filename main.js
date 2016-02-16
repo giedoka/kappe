@@ -6,6 +6,9 @@ $(document).ready(function(){
     	$('header').animate({
     		left: '0'
     	});
+        $('.contact-info').animate({
+            right: '-280px'
+        },200);
     });
 	
     $('article').click(function() {

@@ -67,6 +67,7 @@ header {
     padding-bottom: 272px; }
     header .under-menu h2 {
       margin: 0;
+      font-weight: 100;
       color: #27b2b0;
       font-size: 19px;
       padding: 23px 0; }
