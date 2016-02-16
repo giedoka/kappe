@@ -121,7 +121,7 @@ header .under-menu h2 {
 
 aside .info {
   position: relative;
-  z-index: 9999; }
+  z-index: 998; }
   aside .info .info-btn {
     background-color: #27b2b0;
     opacity: 0.7;

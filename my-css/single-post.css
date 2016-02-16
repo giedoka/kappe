@@ -66,30 +66,45 @@ article {
               cursor: pointer; }
               article .container .left-column .post .header-img ul li.active {
                 background: #27b2b0; }
-      article .container .left-column .comments .comments-list li {
-        display: block; }
-        article .container .left-column .comments .comments-list li .comment {
-          display: flex;
-          margin-bottom: 30px; }
-          article .container .left-column .comments .comments-list li .comment .photo {
-            width: 80px;
-            height: 80px;
-            background: url("../img/staff.png") no-repeat;
-            background-position: center; }
-          article .container .left-column .comments .comments-list li .comment .data {
-            margin-left: 21px; }
-            article .container .left-column .comments .comments-list li .comment .data .name-and-date {
-              font-size: 1.4rem;
-              font-weight: 100;
-              padding-bottom: 9px;
-              border-bottom: 1px solid #d1d1d1;
-              margin: 0;
-              display: inline-block; }
-              article .container .left-column .comments .comments-list li .comment .data .name-and-date span {
-                color: #d1d1d1; }
-            article .container .left-column .comments .comments-list li .comment .data p {
-              margin-top: 11px;
-              color: #a3a3a3; }
+      article .container .left-column .comments .comments-list {
+        padding-left: 0px; }
+        article .container .left-column .comments .comments-list li {
+          display: block; }
+          article .container .left-column .comments .comments-list li .comment {
+            display: flex;
+            margin-bottom: 30px;
+            flex-wrap: nowrap;
+            justify-content: flex-start; }
+            article .container .left-column .comments .comments-list li .comment .photo {
+              width: 80px;
+              height: 80px;
+              background: url("../img/staff.png") no-repeat;
+              background-position: center;
+              background-size: 50px; }
+            article .container .left-column .comments .comments-list li .comment .data {
+              margin-left: 21px; }
+              article .container .left-column .comments .comments-list li .comment .data .name-and-date {
+                font-size: 1.4rem;
+                font-weight: 100;
+                padding-bottom: 9px;
+                border-bottom: 1px solid #d1d1d1;
+                margin: 0;
+                display: inline-block; }
+                article .container .left-column .comments .comments-list li .comment .data .name-and-date span {
+                  color: #d1d1d1; }
+              article .container .left-column .comments .comments-list li .comment .data p {
+                margin-top: 11px;
+                color: #a3a3a3; }
+          article .container .left-column .comments .comments-list li .answer-comment li .comment {
+            align-items: center; }
+            article .container .left-column .comments .comments-list li .answer-comment li .comment .photo {
+              width: 40px;
+              height: 40px;
+              background-size: 30px; }
+            article .container .left-column .comments .comments-list li .answer-comment li .comment .name-and-date {
+              font-size: 1.2rem; }
+            article .container .left-column .comments .comments-list li .answer-comment li .comment p {
+              font-size: 1.4rem; }
       article .container .left-column .leave-comment form {
         display: flex;
         font-size: 1.4rem;

@@ -1,0 +1,106 @@
+$backgroundGrey: #b4b7b8;
+$turqoiseColor: #27b2b0;
+$paragraphColor: #b1b1b1;
+$turqoiseRGBa: rgba(39, 178, 176, 0.9);
+$commentSpanColor: #d1d1d1;
+$commentParagraphColor: #a3a3a3;
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    body {
+        height: 100%;
+        
+        article {
+            margin-left: 300px;
+            @media(max-width:1000px) {
+                margin-left: 0;
+            }
+            
+            h2, p {
+                margin: 0;
+                font-weight: 100;
+            }
+            
+            h2 {
+                font-size: 2.4rem;
+                margin: 26px 0;
+                
+                &:first-child {
+                    @media(max-width: 600px) {
+                        display: none;
+                    }
+                }
+            }
+            
+            p {
+                font-size: 1.8rem;
+            	color: $commentParagraphColor;
+                @media(max-width: 600px) {
+                    display: none;
+                }
+            }
+            
+            .map-container {
+                width: 100%;
+                height: 100%;
+                
+                .contact {
+                    padding: 0 30px 26px 30px;
+                    position: fixed;
+                    z-index: 99;
+                    top: 25px;
+                    left: 325px;
+                    background: #ffffff;
+                    width: 35%;
+                    opacity: 0.7;
+                    @media(max-width: 1000px) {
+                        left: 25px;
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                    
+                    form {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        font-size: 1.4rem;
+                        
+                        .left-column {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        
+                        .right-column {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+                
+                #googleMap {
+                    z-index: 98;
+                }
+            }
+        }
+    }
+}
+
+article {
+    margin-left: 300px;
+    @media(max-width:1000px) {
+        margin-left: 0;
+    }
+    
+    .map-container {
+        width: 100%;
+        
+         
+        #googleMap {
+            height: 700px;
+            //width: 800px;
+        }
+    }
+}

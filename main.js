@@ -20,6 +20,14 @@ $(document).ready(function(){
     });
 
     $('.info-btn').click(function(){
+        if($(window).width() < 1000) {
+            $('header').animate({
+                left: '-301px'
+            });
+            $('.menu-btn').animate({
+                left: '0'
+            });
+        }
         if($(this).css('opacity') == 0.7) {
             $(this).css('opacity', '1');
         }

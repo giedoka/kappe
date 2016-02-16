@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  font-size: 62.5%; }
+  html body {
+    height: 100%; }
+    html body article {
+      margin-left: 300px; }
+      @media (max-width: 1000px) {
+        html body article {
+          margin-left: 0; } }
+      html body article h2, html body article p {
+        margin: 0;
+        font-weight: 100; }
+      html body article h2 {
+        font-size: 2.4rem;
+        margin: 26px 0; }
+        @media (max-width: 600px) {
+          html body article h2:first-child {
+            display: none; } }
+      html body article p {
+        font-size: 1.8rem;
+        color: #a3a3a3; }
+        @media (max-width: 600px) {
+          html body article p {
+            display: none; } }
+      html body article .map-container {
+        width: 100%;
+        height: 100%; }
+        html body article .map-container .contact {
+          padding: 0 30px 26px 30px;
+          position: fixed;
+          z-index: 99;
+          top: 25px;
+          left: 325px;
+          background: #ffffff;
+          width: 35%;
+          opacity: 0.7; }
+          @media (max-width: 1000px) {
+            html body article .map-container .contact {
+              left: 25px; } }
+          html body article .map-container .contact:hover {
+            opacity: 1; }
+          html body article .map-container .contact form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-size: 1.4rem; }
+            html body article .map-container .contact form .left-column {
+              display: flex;
+              flex-direction: column; }
+            html body article .map-container .contact form .right-column {
+              display: flex;
+              flex-direction: column; }
+        html body article .map-container #googleMap {
+          z-index: 98; }
+
+article {
+  margin-left: 300px; }
+  @media (max-width: 1000px) {
+    article {
+      margin-left: 0; } }
+  article .map-container {
+    width: 100%; }
+    article .map-container #googleMap {
+      height: 700px; }
+
+/*# sourceMappingURL=contact.css.map */
