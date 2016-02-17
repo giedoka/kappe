@@ -1,4 +1,8 @@
 $turqoiseColor: #27b2b0;
+$turqoiseColorGradientStart: #31cccb;
+$turqoiseColorGradientStop: #008381;
+$menuListColorStart: #333b3f;
+$menuListColorStop: #2e282a;
 
 html {
     font-size: 62.5%;
@@ -64,13 +68,14 @@ header {
 	       font-size: 18px;
 	       color: #ffffff;
 	       border-bottom: 1px solid #293034;
+               background: linear-gradient(to bottom, $menuListColorStart 0%, $menuListColorStop 100%);
            
            &:hover {
-               background: $turqoiseColor;
+               background: linear-gradient(to bottom, $turqoiseColorGradientStart 0%, $turqoiseColorGradientStop 100%);
            }
            
            &.active {
-               background: $turqoiseColor;
+               background: linear-gradient(to bottom, $turqoiseColorGradientStart 0%, $turqoiseColorGradientStop 100%);
            }
            
            a {

@@ -48,11 +48,12 @@ header {
     font-weight: 300;
     font-size: 18px;
     color: #ffffff;
-    border-bottom: 1px solid #293034; }
+    border-bottom: 1px solid #293034;
+    background: linear-gradient(to bottom, #333b3f 0%, #2e282a 100%); }
     header .menu li:hover {
-      background: #27b2b0; }
+      background: linear-gradient(to bottom, #31cccb 0%, #008381 100%); }
     header .menu li.active {
-      background: #27b2b0; }
+      background: linear-gradient(to bottom, #31cccb 0%, #008381 100%); }
     header .menu li a {
       color: #ffffff;
       text-decoration: none;

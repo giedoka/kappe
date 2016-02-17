@@ -4,6 +4,7 @@ html {
   html body {
     height: 100%; }
     html body article {
+      height: 100%;
       margin-left: 300px; }
       @media (max-width: 1000px) {
         html body article {
@@ -53,16 +54,8 @@ html {
               display: flex;
               flex-direction: column; }
         html body article .map-container #googleMap {
-          z-index: 98; }
-
-article {
-  margin-left: 300px; }
-  @media (max-width: 1000px) {
-    article {
-      margin-left: 0; } }
-  article .map-container {
-    width: 100%; }
-    article .map-container #googleMap {
-      height: 700px; }
+          z-index: 98;
+          height: 100%;
+          width: 100%; }
 
 /*# sourceMappingURL=contact.css.map */
