@@ -89,6 +89,12 @@
       "css": "right-open-big",
       "code": 59399,
       "src": "entypo"
+    },
+    {
+      "uid": "8da3ac534210aae9c0f0e13804c1df97",
+      "css": "cancel-1",
+      "code": 59407,
+      "src": "websymbols"
     }
   ]
 }

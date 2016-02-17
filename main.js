@@ -49,6 +49,18 @@ $(document).ready(function(){
 	    	},200);
 	    }
     });
+    
+    $('.contact-btn').hover(function() {
+       $('.contact').css('display', 'block'); 
+       }, function(){
+       $('.contact').css('display', 'none');
+    });
+    
+    $('.contact').hover(function() {
+       $(this).css('display', 'block'); 
+       }, function(){
+       $(this).css('display', 'none');
+    });
 
     $('.width-span').html($('.photo-box').width());
     $('.height-span').html($('.photo-box').height());

@@ -46,7 +46,19 @@ html {
                 width: 100%;
                 height: 100%;
                 
+                .contact-btn {
+                    position: fixed;
+                    z-index: 99;
+                    top: 25px;
+                    left: 325px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3.5rem;
+                }
+                
                 .contact {
+                    display: none;
                     padding: 0 30px 26px 30px;
                     position: fixed;
                     z-index: 99;
@@ -54,12 +66,8 @@ html {
                     left: 325px;
                     background: #ffffff;
                     width: 35%;
-                    opacity: 0.7;
                     @media(max-width: 1000px) {
                         left: 25px;
-                    }
-                    &:hover {
-                        opacity: 1;
                     }
                     
                     form {
@@ -82,6 +90,7 @@ html {
                 }
                 
                 #googleMap {
+                    
                     z-index: 98;
                     height: 100%;
                     width: 100%;
