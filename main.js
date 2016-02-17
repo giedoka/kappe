@@ -50,16 +50,12 @@ $(document).ready(function(){
 	    }
     });
     
-    $('.contact-btn').hover(function() {
-       $('.contact').css('display', 'block'); 
-       }, function(){
-       $('.contact').css('display', 'none');
+    $('.contact-btn').click(function() {
+       $('.contact').css('display', 'block');
     });
     
-    $('.contact').hover(function() {
-       $(this).css('display', 'block'); 
-       }, function(){
-       $(this).css('display', 'none');
+    $('.close-btn').click(function() {
+        $('.contact').css('display', 'none');
     });
 
     $('.width-span').html($('.photo-box').width());

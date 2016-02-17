@@ -158,6 +158,7 @@ article {
                     display: flex;
                     font-size: 1.4rem;
                     flex-wrap: wrap;
+                    flex-direction: row;
                     
                     .left-column {
                         display: flex;
@@ -203,6 +204,7 @@ article {
                         
                         input[name="submit-post-btn"] {
                             height: 61px;
+                            width: 100%;
                             margin-top: 10px;
                             background: $turqoiseColor;
                             border: none;

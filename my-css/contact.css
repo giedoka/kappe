@@ -35,7 +35,8 @@ html {
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 3.5rem; }
+          font-size: 3.5rem;
+          cursor: pointer; }
           @media (max-width: 1000px) {
             html body article .map-container .contact-btn {
               left: 25px; } }
@@ -51,6 +52,12 @@ html {
           @media (max-width: 1000px) {
             html body article .map-container .contact {
               left: 25px; } }
+          html body article .map-container .contact .close-btn {
+            position: absolute;
+            font-size: 1.5rem;
+            left: 8px;
+            top: 11px;
+            cursor: pointer; }
           html body article .map-container .contact form {
             display: flex;
             flex-direction: row;

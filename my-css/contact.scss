@@ -55,6 +55,7 @@ html {
                     justify-content: center;
                     align-items: center;
                     font-size: 3.5rem;
+                    cursor: pointer;
                     @media(max-width: 1000px) {
                         left: 25px;
                     }
@@ -71,6 +72,14 @@ html {
                     width: 35%;
                     @media(max-width: 1000px) {
                         left: 25px;
+                    }
+                    
+                    .close-btn {
+                        position: absolute;
+                        font-size: 1.5rem;
+                        left: 8px;
+                        top: 11px;
+                        cursor: pointer;
                     }
                     
                     form {

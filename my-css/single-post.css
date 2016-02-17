@@ -108,7 +108,8 @@ article {
       article .container .left-column .leave-comment form {
         display: flex;
         font-size: 1.4rem;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        flex-direction: row; }
         article .container .left-column .leave-comment form .left-column {
           display: flex;
           justify-content: flex-start;
@@ -142,6 +143,7 @@ article {
             border: 1px solid #b1b1b1; }
           article .container .left-column .leave-comment form .right-column input[name="submit-post-btn"] {
             height: 61px;
+            width: 100%;
             margin-top: 10px;
             background: #27b2b0;
             border: none;
