@@ -55,6 +55,9 @@ html {
                     justify-content: center;
                     align-items: center;
                     font-size: 3.5rem;
+                    @media(max-width: 1000px) {
+                        left: 25px;
+                    }
                 }
                 
                 .contact {

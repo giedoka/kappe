@@ -36,6 +36,9 @@ html {
           justify-content: center;
           align-items: center;
           font-size: 3.5rem; }
+          @media (max-width: 1000px) {
+            html body article .map-container .contact-btn {
+              left: 25px; } }
         html body article .map-container .contact {
           display: none;
           padding: 0 30px 26px 30px;
