@@ -16,7 +16,7 @@ html {
         font-size: 2.4rem;
         margin: 26px 0; }
         @media (max-width: 600px) {
-          html body article h2:first-child {
+          html body article h2:first-of-type {
             display: none; } }
       html body article p {
         font-size: 1.8rem;
@@ -41,7 +41,6 @@ html {
             html body article .map-container .contact-btn {
               left: 25px; } }
         html body article .map-container .contact {
-          display: none;
           padding: 0 30px 26px 30px;
           position: fixed;
           z-index: 99;
@@ -64,12 +63,24 @@ html {
             flex-wrap: wrap;
             justify-content: space-around;
             font-size: 1.4rem; }
+            html body article .map-container .contact form input {
+              flex: 0 1 40px; }
             html body article .map-container .contact form .left-column {
               display: flex;
-              flex-direction: column; }
+              flex-direction: column;
+              flex: 1 0 auto; }
+              html body article .map-container .contact form .left-column input {
+                height: 30%; }
             html body article .map-container .contact form .right-column {
               display: flex;
-              flex-direction: column; }
+              flex-direction: column;
+              flex: 1 0 auto; }
+              html body article .map-container .contact form .right-column input[type="text"] {
+                flex: 2 0 auto; }
+              html body article .map-container .contact form .right-column input[type="submit"] {
+                flex: 1 0 auto;
+                background: #27b2b0;
+                border: none; }
         html body article .map-container #googleMap {
           z-index: 98;
           height: 100%;
