@@ -142,7 +142,8 @@ article {
             color: #ffffff;
             display: flex;
             align-items: center;
-            padding-left: 23px; }
+            padding-left: 23px;
+            padding-right: 23px; }
         article .container .right-column .testimionials p {
           margin: 0;
           padding: 27px;

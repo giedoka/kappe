@@ -67,6 +67,7 @@ article {
                         background: $turqoiseColor;
                         opacity: 0.7;
                         cursor: pointer;
+                        display: none;
                         &:hover {
                             opacity: 1;
                         }

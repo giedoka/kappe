@@ -9,6 +9,7 @@ $(document).ready(function(){
         $('.contact-info').animate({
             right: '-280px'
         },200);
+        $('.icon-info-circled').removeClass('active');
     });
 	
     $('article').click(function() {

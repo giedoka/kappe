@@ -71,7 +71,8 @@ article {
           color: #ffffff;
           background: #27b2b0;
           opacity: 0.7;
-          cursor: pointer; }
+          cursor: pointer;
+          display: none; }
           article .posts .column-1 .post .header i:hover,
           article .posts .column-2 .post .header i:hover,
           article .posts .column-3 .post .header i:hover,
