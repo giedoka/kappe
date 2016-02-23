@@ -63,6 +63,7 @@ html {
                 
                 .contact {
                     //display: none;
+                    overflow: auto;
                     padding: 0 30px 26px 30px;
                     position: fixed;
                     z-index: 99;
@@ -84,39 +85,73 @@ html {
                     
                     form {
                         display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-around;
                         font-size: 1.4rem;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        justify-content: space-between;
                         
                         input {
-                            flex: 0 1 40px;
                             border-radius: 0;
                         }
                         
                         .left-column {
                             display: flex;
                             flex-direction: column;
-                            flex: 1 0 auto;
+                            border-right: none;
+                            padding: 0;
                             
-                            input {
-                                height: 30%;
+                            .textbox {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 10px;
+                                margin-right: 5px;
+                                border: 1px solid $commentSpanColor;
+                                height: 40px;
+                                
+                                .icon {
+                                    padding: 0 10px 0 6px;
+                                    color: $turqoiseColor;
+                                    i {
+                                        border: 1px solid $turqoiseColor;
+                                        padding: 7px 5px;
+                                        border-radius: 100%;
+                                    }
+                                }
+                                
+                                input {
+                                    border: 0;
+                                    margin-top: 10px;
+                                    border-left: 1px solid $commentSpanColor;
+                                    height: 95%;
+                                    &:first-of-type {
+                                        margin-top: 0;
+                                    }
+                                }
                             }
                         }
-                        
                         .right-column {
+                            margin: 0;
+                            padding: 0;
                             display: flex;
                             flex-direction: column;
-                            flex: 1 0 auto;
+                            margin-left: 5px;
                             
-                            input[type="text"] {
-                                flex: 2 0 auto;
+                            input[name="message"] {
+                                padding: 0;
+                                border: 1px solid $commentSpanColor;
+                                height: 92px;
                             }
                             
-                            input[type="submit"] {
-                                flex: 1 0 auto;
+                            input[name="submit-post-btn"] {
+                                height: 42px;
+                                margin-top: 10px;
                                 background: $turqoiseColor;
-                                border: none;
+                                border: 1px solid $turqoiseColor;
+                                color: #ffffff;
+                                &:hover {
+                                    background: #ffffff;
+                                    color: $turqoiseColor;
+                                }
                             }
                         }
                     }

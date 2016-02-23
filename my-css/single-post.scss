@@ -166,61 +166,67 @@ article {
                     flex-wrap: wrap;
                     flex-direction: row;
                     
+                    input {
+                        border-radius: 0;
+                    }
+                    
                     .left-column {
                         display: flex;
-                        justify-content: flex-start;
-                        flex: 1 0 48%;
+                        flex-direction: column;
                         border-right: none;
                         padding: 0;
                         
                         .textbox {
                             display: flex;
                             align-items: center;
-                            flex: 1 0 100%;
                             margin-bottom: 10px;
-                            margin-right: 10px;
-                            border: 1px solid $paragraphColor;
+                            margin-right: 5px;
+                            border: 1px solid $commentSpanColor;
+                            height: 40px;
                             
                             .icon {
                                 padding: 0 10px 0 6px;
+                                color: $turqoiseColor;
                                 i {
-                                    border: 1px solid $commentParagraphColor;
+                                    border: 1px solid $turqoiseColor;
                                     padding: 7px 5px;
                                     border-radius: 100%;
                                 }
                             }
                             
                             input {
-                                width: 100%;
-                                height: 57px;
                                 border: 0;
-                                border-radius: 0;
-                                border-left: 1px solid $paragraphColor;
+                                margin-top: 10px;
+                                border-left: 1px solid $commentSpanColor;
+                                height: 95%;
+                                &:first-of-type {
+                                    margin-top: 0;
+                                }
                             }
                         }
                     }
                     .right-column {
-                        flex: 1 0 48%;
-                        margin: 0px;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 5px;
                         
-                        input {
-                            width: 100%;
-                            height: 128px;
-                            border: 1px solid $paragraphColor;
+                        input[name="message"] {
+                            padding: 0;
+                            border: 1px solid $commentSpanColor;
+                            height: 92px;
                         }
                         
                         input[name="submit-post-btn"] {
-                            height: 61px;
-                            width: 100%;
+                            height: 42px;
                             margin-top: 10px;
                             background: $turqoiseColor;
-                            border: none;
+                            border: 1px solid $turqoiseColor;
                             color: #ffffff;
-                            border: none;
                             &:hover {
                                 background: #ffffff;
                                 color: $turqoiseColor;
-                                border: 1px solid $turqoiseColor;
                             }
                         }
                     }

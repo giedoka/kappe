@@ -118,50 +118,53 @@ article {
         font-size: 1.4rem;
         flex-wrap: wrap;
         flex-direction: row; }
+        article .container .left-column .leave-comment form input {
+          border-radius: 0; }
         article .container .left-column .leave-comment form .left-column {
           display: flex;
-          justify-content: flex-start;
-          flex: 1 0 48%;
+          flex-direction: column;
           border-right: none;
           padding: 0; }
           article .container .left-column .leave-comment form .left-column .textbox {
             display: flex;
             align-items: center;
-            flex: 1 0 100%;
             margin-bottom: 10px;
-            margin-right: 10px;
-            border: 1px solid #717171; }
+            margin-right: 5px;
+            border: 1px solid #c1c1c1;
+            height: 40px; }
             article .container .left-column .leave-comment form .left-column .textbox .icon {
-              padding: 0 10px 0 6px; }
+              padding: 0 10px 0 6px;
+              color: #27b2b0; }
               article .container .left-column .leave-comment form .left-column .textbox .icon i {
-                border: 1px solid #a3a3a3;
+                border: 1px solid #27b2b0;
                 padding: 7px 5px;
                 border-radius: 100%; }
             article .container .left-column .leave-comment form .left-column .textbox input {
-              width: 100%;
-              height: 57px;
               border: 0;
-              border-radius: 0;
-              border-left: 1px solid #717171; }
+              margin-top: 10px;
+              border-left: 1px solid #c1c1c1;
+              height: 95%; }
+              article .container .left-column .leave-comment form .left-column .textbox input:first-of-type {
+                margin-top: 0; }
         article .container .left-column .leave-comment form .right-column {
-          flex: 1 0 48%;
-          margin: 0px; }
-          article .container .left-column .leave-comment form .right-column input {
-            width: 100%;
-            height: 128px;
-            border: 1px solid #717171; }
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          margin-left: 5px; }
+          article .container .left-column .leave-comment form .right-column input[name="message"] {
+            padding: 0;
+            border: 1px solid #c1c1c1;
+            height: 92px; }
           article .container .left-column .leave-comment form .right-column input[name="submit-post-btn"] {
-            height: 61px;
-            width: 100%;
+            height: 42px;
             margin-top: 10px;
             background: #27b2b0;
-            border: none;
-            color: #ffffff;
-            border: none; }
+            border: 1px solid #27b2b0;
+            color: #ffffff; }
             article .container .left-column .leave-comment form .right-column input[name="submit-post-btn"]:hover {
               background: #ffffff;
-              color: #27b2b0;
-              border: 1px solid #27b2b0; }
+              color: #27b2b0; }
     article .container .right-column {
       flex: 1 0 40%;
       margin: 0;

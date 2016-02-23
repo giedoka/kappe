@@ -41,6 +41,7 @@ html {
             html body article .map-container .contact-btn {
               left: 25px; } }
         html body article .map-container .contact {
+          overflow: auto;
           padding: 0 30px 26px 30px;
           position: fixed;
           z-index: 99;
@@ -59,29 +60,57 @@ html {
             cursor: pointer; }
           html body article .map-container .contact form {
             display: flex;
-            flex-direction: row;
+            font-size: 1.4rem;
             flex-wrap: wrap;
-            justify-content: space-around;
-            font-size: 1.4rem; }
+            flex-direction: row;
+            justify-content: space-between; }
             html body article .map-container .contact form input {
-              flex: 0 1 40px;
               border-radius: 0; }
             html body article .map-container .contact form .left-column {
               display: flex;
               flex-direction: column;
-              flex: 1 0 auto; }
-              html body article .map-container .contact form .left-column input {
-                height: 30%; }
+              border-right: none;
+              padding: 0; }
+              html body article .map-container .contact form .left-column .textbox {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                margin-right: 5px;
+                border: 1px solid #d1d1d1;
+                height: 40px; }
+                html body article .map-container .contact form .left-column .textbox .icon {
+                  padding: 0 10px 0 6px;
+                  color: #27b2b0; }
+                  html body article .map-container .contact form .left-column .textbox .icon i {
+                    border: 1px solid #27b2b0;
+                    padding: 7px 5px;
+                    border-radius: 100%; }
+                html body article .map-container .contact form .left-column .textbox input {
+                  border: 0;
+                  margin-top: 10px;
+                  border-left: 1px solid #d1d1d1;
+                  height: 95%; }
+                  html body article .map-container .contact form .left-column .textbox input:first-of-type {
+                    margin-top: 0; }
             html body article .map-container .contact form .right-column {
+              margin: 0;
+              padding: 0;
               display: flex;
               flex-direction: column;
-              flex: 1 0 auto; }
-              html body article .map-container .contact form .right-column input[type="text"] {
-                flex: 2 0 auto; }
-              html body article .map-container .contact form .right-column input[type="submit"] {
-                flex: 1 0 auto;
+              margin-left: 5px; }
+              html body article .map-container .contact form .right-column input[name="message"] {
+                padding: 0;
+                border: 1px solid #d1d1d1;
+                height: 92px; }
+              html body article .map-container .contact form .right-column input[name="submit-post-btn"] {
+                height: 42px;
+                margin-top: 10px;
                 background: #27b2b0;
-                border: none; }
+                border: 1px solid #27b2b0;
+                color: #ffffff; }
+                html body article .map-container .contact form .right-column input[name="submit-post-btn"]:hover {
+                  background: #ffffff;
+                  color: #27b2b0; }
         html body article .map-container #googleMap {
           z-index: 98;
           height: 100%;
