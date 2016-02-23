@@ -1,8 +1,8 @@
 $backgroundGrey: #b4b7b8;
 $turqoiseColor: #27b2b0;
-$paragraphColor: #b1b1b1;
+$paragraphColor: #717171;
 $turqoiseRGBa: rgba(39, 178, 176, 0.9);
-$commentSpanColor: #d1d1d1;
+$commentSpanColor: #c1c1c1;
 $commentParagraphColor: #a3a3a3;
 
 html {
@@ -92,8 +92,10 @@ article {
                 }
             }
             #comments {
+                border-bottom: 1px solid $commentSpanColor;
                 .comments-list {
                     padding-left: 0px;
+                    margin: 0;
                     
                     li {
                         display: block;
@@ -131,6 +133,7 @@ article {
                             }
                         }
                         .answer-comment {
+                            padding-left: 60px;
                             li {
                                 .comment {
                                     align-items: center;
@@ -266,15 +269,28 @@ article {
                         border-radius: 10px;
                         margin-right: 10px;
                         margin-top: 10px;
+                        cursor: pointer;
                         &:last-child {
                             margin-right: 0;
+                        }
+                        &:hover {
+                            color: firebrick;
+                            border-color: firebrick;
                         }
                     }
                 }
             }
             .archives {
-                li {
-                    margin-bottom: 16px;
+                ul {
+                    li {
+                        margin-bottom: 16px;
+                        cursor: pointer;
+                        
+                        &:hover {
+                            color: firebrick;
+                            font-weight: 300;
+                        }
+                    }
                 }
             }
         }

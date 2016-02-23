@@ -41,6 +41,7 @@ article {
       align-items: center;
       color: #ffffff;
       left: 0;
+      top: 0;
       position: absolute;
       background: rgba(39, 178, 176, 0.8);
       width: 100%;
