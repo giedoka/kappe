@@ -54,6 +54,9 @@ article {
             flex: 1 0 40%;
             padding: 30px;
             border-right: 1px solid $paragraphColor;
+            @media(max-width: 400px) {
+                padding: 20px;
+            }
             
             .post {
                 padding-bottom: 30px;
@@ -67,7 +70,7 @@ article {
                             height: 200px;
                         }
                         @media(max-width: 400px) {
-                            height: 120px;
+                            height: 170px;
                         } 
                     }
                     ul {
@@ -197,7 +200,7 @@ article {
                     }
                     .right-column {
                         flex: 1 0 48%;
-                        margin: 0;
+                        margin: 0px;
                         
                         input {
                             width: 100%;
@@ -226,7 +229,11 @@ article {
         
         .right-column {
             flex: 1 0 40%;
-            margin: 30px;
+            margin: 0;
+            padding: 30px;
+            @media(max-width: 400px) {
+                padding: 20px;
+            }
             
             ul {
                 padding: 0;
