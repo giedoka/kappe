@@ -64,7 +64,8 @@ html {
             justify-content: space-around;
             font-size: 1.4rem; }
             html body article .map-container .contact form input {
-              flex: 0 1 40px; }
+              flex: 0 1 40px;
+              border: 0; }
             html body article .map-container .contact form .left-column {
               display: flex;
               flex-direction: column;
