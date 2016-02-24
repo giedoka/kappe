@@ -52,6 +52,12 @@ html {
           @media (max-width: 1000px) {
             html body article .map-container .contact {
               left: 25px; } }
+          @media (max-width: 600px) {
+            html body article .map-container .contact {
+              width: 200px; } }
+          html body article .map-container .contact p {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #a3a3a3; }
           html body article .map-container .contact .close-btn {
             position: absolute;
             font-size: 1.5rem;
@@ -70,7 +76,8 @@ html {
               display: flex;
               flex-direction: column;
               border-right: none;
-              padding: 0; }
+              padding: 0;
+              flex: 1; }
               html body article .map-container .contact form .left-column .textbox {
                 display: flex;
                 align-items: center;
@@ -97,7 +104,8 @@ html {
               padding: 0;
               display: flex;
               flex-direction: column;
-              margin-left: 5px; }
+              margin-left: 5px;
+              flex: 1; }
               html body article .map-container .contact form .right-column input[name="message"] {
                 padding: 0;
                 border: 1px solid #d1d1d1;

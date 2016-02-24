@@ -74,6 +74,14 @@ html {
                     @media(max-width: 1000px) {
                         left: 25px;
                     }
+                    @media(max-width: 600px) {
+                        width: 200px;
+                    }
+                    
+                    p {
+                        padding-bottom: 30px;
+                        border-bottom: 1px solid $commentParagraphColor;
+                    }
                     
                     .close-btn {
                         position: absolute;
@@ -99,6 +107,7 @@ html {
                             flex-direction: column;
                             border-right: none;
                             padding: 0;
+                            flex: 1;
                             
                             .textbox {
                                 display: flex;
@@ -135,6 +144,7 @@ html {
                             display: flex;
                             flex-direction: column;
                             margin-left: 5px;
+                            flex: 1;
                             
                             input[name="message"] {
                                 padding: 0;
